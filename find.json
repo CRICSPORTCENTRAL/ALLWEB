@@ -2,5 +2,6 @@
   "1": "https://prod-sports-eng-gm.jiocinema.com/hls/live/2100306/hd_akamai_merged_avc_eng_cricket_m2_110125/master.m3u8",
   "2": "https://vkvsd63.okcdn.ru/cmaf/7609346427623/sig/_rYvjUCSNfg/expires/1736608645115/srcIp/3.7.74.116/urls/45.136.22.86/clientType/13/srcAg/CHROME/mid/9268228402151/get/hls_9268228402151.5KKT1O7VepA.m3u8",
   "3": "https://prod-sports-eng-gm.jiocinema.com/hls/live/2100306/hd_akamai_merged_avc_eng_cricket_m1_110125/master.m3u8",
-  "willows": "https://amg01269-amg01269c1-willowtv-us-5479.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-willowtvus/playlist.m3u8"
+  "willows": "https://amg01269-amg01269c1-willowtv-us-5479.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-willowtvus/playlist.m3u8",
+  "fox": "https://m118753.protect-cdn.net/live/m1-index.m3u8"
 }
