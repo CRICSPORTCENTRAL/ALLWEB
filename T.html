@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TG @𝙲𝚁𝙸𝙲𝙭𝙿𝚁𝙴𝚂𝚂</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    #player {
+      position: absolute;
+      width: 100% !important;
+      height: 100% !important;
+    }
+    .watermark {
+      position: absolute;
+      top: 7px;
+      left: 10px;
+      z-index: 10;
+    }
+    .watermark img {
+      width: 110px;
+      opacity: 0.8;
+    }
+  </style>
+  <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
+</head>
+<body>
+  <div id="player"></div>
+  <div class="watermark">
+    <img src="https://i.postimg.cc/R0tFCHGy/Picsart-25-01-08-18-20-40-829.png" alt="Watermark">
+  </div>
+  <script>
+    if (confirm("Join Our Telegram Channel @𝙲𝚁𝙸𝙲𝙭𝙿𝚁𝙴𝚂𝚂")) {
+      window.location.href = "https://t.me/CRICXPRESS";
+    }
+
+    // Fetch the ID parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id'); // Get the 'id' parameter
+
+    // Define the Cloudflare URL that holds the JSON file
+    const jsonUrl = 'https://cricxpress.pages.dev/Try.json'; // Replace with your actual Cloudflare URL
+
+    // Fetch the JSON and get the corresponding M3U8 URL
+    fetch(jsonUrl)
+      .then(response => response.json())
+      .then(data => {
+        const m3u8Url = data[id]; // Get the M3U8 URL corresponding to the ID
+
+        if (m3u8Url) {
+          jwplayer("player").setup({
+            file: m3u8Url, // Use the M3U8 URL fetched dynamically
+            preload: "metadata", // Preload video metadata
+            width: "100%",
+            height: "100%",
+          });
+        } else {
+          console.error('M3U8 URL not found for this ID');
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching the M3U8 URLs:', error);
+      });
+  </script>
+</body>
+</html>
