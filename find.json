@@ -5,5 +5,7 @@
   "fox": "https://m118753.protect-cdn.net/live/m1-index.m3u8",
   "4": "https://prod-sports-eng-cf.jiocinema.com/hls/live/2100306/hd_akamai_merged_avc_eng_cricket_m2_120125/master.m3u8",
   "5": "https://prod-sports-eng-cf.jiocinema.com/hls/live/2100306/hd_akamai_merged_avc_eng_cricket_m1_120125/master.m3u8",
-  "6": "https://cricxpress.pages.dev/Tr.m3u8"
+  "6": "https://cricxpress.pages.dev/Tr.m3u8",
+  "7": "https://live-api.vimeocdn.com/sessions/cfec4ce0-3863-4efc-889d-40964f925447/playlist/hls.m3u8?cdn=akamai-fmp4&json=1&~exp=1736780400&~id=player&~sig=drqHyLk2LrejAMhyQYjxMOGKCNd5NdOG8Fgy0f2Qjes",
+  "8": "https://live-ak.vimeocdn.com/exp=1736782096~acl=%2Fcfec4ce0-3863-4efc-889d-40964f925447_fmp4%2F%2A~hmac=e95c862e12c5ee0bcb655982b08e4838a277ab9fa179b61262b3ca1e30c5874f/cfec4ce0-3863-4efc-889d-40964f925447_fmp4/hls.m3u8"  
 }
