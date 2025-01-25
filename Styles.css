@@ -28,10 +28,15 @@ video {
 /* Watermark styling */
 .watermark {
     position: absolute;
-    top: 2px; /* Adjusted to move closer to the top */
+    top: 2px;
     left: 10px;
     width: 100px; /* Adjust the width as needed */
     opacity: 0.7; /* Slight transparency */
     z-index: 10;
     cursor: pointer;
+}
+
+.watermark img {
+    width: 100%;
+    height: auto;
 }
