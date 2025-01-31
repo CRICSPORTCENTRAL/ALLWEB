@@ -61,7 +61,7 @@
       if (!videoUrl) return "fallback_video_url.mp4"; // Provide fallback URL if no 'id' is found
 
       // Use the PHP proxy hosted on trycorsphp.fwh.is
-      const proxyUrl = "https://trycorsphp.fwh.is/cors.php?url=" + encodeURIComponent(videoUrl);
+      const proxyUrl = "http://trycorsphp.fwh.is/cors.php?url=" + encodeURIComponent(videoUrl);
       return proxyUrl;
     }
 
