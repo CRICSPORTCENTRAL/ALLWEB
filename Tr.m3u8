@@ -2,10 +2,10 @@
 #EXT-X-VERSION:3
 
 #EXT-X-STREAM-INF:BANDWIDTH=5000000,RESOLUTION=1920x1080,CODECS="avc1.64002A,mp4a.40.2"
-https://1a-1791.com/live/r8wvl35k/slot-69/31gi-wncd_1080p/chunklist_DVR.m3u8
+https://1a-1791.com/live/1n1ugl24/slot-39/mg8i-c0bu_1080p/chunklist.m3u8
 
 #EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=1280x720,CODECS="avc1.64001F,mp4a.40.2"
-https://1a-1791.com/live/r8wvl35k/slot-69/31gi-wncd_720p/chunklist_DVR.m3u8
+https://1a-1791.com/live/1n1ugl24/slot-39/mg8i-c0bu_720p/chunklist.m3u8
 
 #EXT-X-STREAM-INF:BANDWIDTH=800000,RESOLUTION=640x360,CODECS="avc1.4D401E,mp4a.40.2"
-https://1a-1791.com/live/r8wvl35k/slot-69/31gi-wncd_360p/chunklist_DVR.m3u8
+https://1a-1791.com/live/1n1ugl24/slot-39/mg8i-c0bu_360p/chunklist.m3u8
