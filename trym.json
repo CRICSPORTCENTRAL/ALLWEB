@@ -1,0 +1,72 @@
+{
+   'PEACOK_OLIMPIC': {
+    'url': "https://cfrt.stream.peacocktv.com/Content/CMAF_CTR-4s-v2/Live/channel(vc101if3w3)/master_2min.mpd",
+    'k1': "0020c8f2c972400f9bb815a63d5981c8",
+    'k2': "22a841f67bba4ee9a9c0496782b9f670"
+  },
+  'BBC_THREE': {
+    'url': "https://wp1-obc1112-live-ch-prod.prod.cdn.dmdsdp.com/dash/SV09093/manifest.mpd",
+    'k1': "4a50525c66084589983d260a52808f59",
+    'k2': "04ebf492aec2c867560092a956bf51b6"
+  },
+  'BBC_FOUR': {
+    'url': "https://wp1-obc1112-live-ch-prod.prod.cdn.dmdsdp.com/dash/SV09095/manifest.mpd",
+    'k1': "d96572a0a9dd440b88c27268dc133399",
+    'k2': "4c1facad62ea4d7dd3ac59047520aa78"
+  },
+  'NFL': {
+    'url': "https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(lc107a1ddy)/master.mpd",
+    'k1': "002007110c69a23803173b50eab05f23",
+    'k2': "590d6e8f4ca81319f9bb29104f571990"
+  },
+  'NBC_SPORTS': {
+    'url': "https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc122ycnuy)/master.mpd",
+    'k1': "0020d88a6713159839743f655c5da7de",
+    'k2': "ba9f34226301f69a4f0f13f65a1f92ec"
+  },
+  'PREMIER_LEAGUE_TV': {
+    'url': "https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc1021n07j)/master.mpd",
+    'k1': "002046c9a49b9ab1cdb6616bec5d26c3",
+    'k2': "d2f92f6b7edc9a1a05d393ba0c20ef9e"
+  },
+  'WWE': {
+    'url': "https://akam.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc106wh3yw)/master.mpd",
+    'k1': "00208c93f4358213b52220898b962385",
+    'k2': "8ae6063167228e350dd132d4a1573102"
+  },
+  'WWE_NETWORK': {
+    'url': "https://linearjitp-playback.astro.com.my/dash-wv/linear/2603/default.mpd",
+    'k1': "0cbc4d3b4fbd9af512acb2488bb42910",
+    'k2': "30528c4ef882954e5707cd1001d66121"
+  },
+  'SPOTV': {
+    'url': "https://linearjitp-playback.astro.com.my/dash-wv/linear/5058/default.mpd",
+    'k1': "c0e1804aa1d9fd9c41c41bf0f61a5f10",
+    'k2': "758823e4eabb6e4c8c036d073db46b8c"
+  },
+  'USA_NETWORK': {
+    'url': "https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(usa-east)/master.mpd",
+    'k1': "882c9f5613b43b47adc70aa968a308ce",
+    'k2': "de534ef8914bfe62ba3cdd6bdb9e1c04"
+  },
+  'biena1': {
+    'url': "https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_primary.mpd",
+    'k1': "1a655189ab5c49eb235308c2b1a9e710",
+    'k2': "3c4508af348844107f5e026a4fd6b16e "
+  },
+  'biena2': {
+    'url': "https://linearjitp-playback.astro.com.my/dash-wv/linear/5066/default_primary.mpd",
+    'k1': "39c175581e237eff9559607eb9b23c10",
+    'k2': "5102b12aac7756c65dcb46a101d960d3"
+  },
+  'biena3': {
+    'url': "https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_primary.mpd",
+    'k1': "20c884ef8ed26b2762f8b1a78f2d1910",
+    'k2': "042a21bf236ca729b1e343ed6e0a6337"
+  },
+  'BBC_THREE': {
+    'url': "https://wp1-obc1112-live-ch-prod.prod.cdn.dmdsdp.com/dash/SV09093/manifest.mpd",
+    'k1': "4a50525c66084589983d260a52808f59",
+    'k2': "04ebf492aec2c867560092a956bf51b6"
+  }
+}
