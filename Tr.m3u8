@@ -1,11 +1,17 @@
 #EXTM3U
 #EXT-X-VERSION:3
 
-#EXT-X-STREAM-INF:BANDWIDTH=5000000,RESOLUTION=1920x1080,CODECS="avc1.64002A,mp4a.40.2"
-https://1a-1791.com/live/1n1ugl24/slot-39/mg8i-c0bu_1080p/chunklist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=444100,RESOLUTION=480x270
+https://cdn09jtedge.indihometv.com/joss/133/nba/chunklist_w166731224_b444100_sleng.m3u8
 
-#EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=1280x720,CODECS="avc1.64001F,mp4a.40.2"
-https://1a-1791.com/live/1n1ugl24/slot-39/mg8i-c0bu_720p/chunklist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=844100,RESOLUTION=640x360
+https://cdn09jtedge.indihometv.com/joss/133/nba/chunklist_w166731224_b844100_sleng.m3u8
 
-#EXT-X-STREAM-INF:BANDWIDTH=800000,RESOLUTION=640x360,CODECS="avc1.4D401E,mp4a.40.2"
-https://1a-1791.com/live/1n1ugl24/slot-39/mg8i-c0bu_360p/chunklist.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1244100,RESOLUTION=960x540
+https://cdn09jtedge.indihometv.com/joss/133/nba/chunklist_w166731224_b1244100_sleng.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=1544100,RESOLUTION=1280x720
+https://cdn09jtedge.indihometv.com/joss/133/nba/chunklist_w166731224_b1544100_sleng.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=2544100,RESOLUTION=1920x1080
+https://cdn09jtedge.indihometv.com/joss/133/nba/chunklist_w166731224_b2544100_sleng.m3u8
