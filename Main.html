@@ -30,28 +30,38 @@
   </style>
   <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
 </head>
-<body>
+<body oncontextmenu="return false;" onkeydown="return blockKeys(event);">
   <div id="player"></div>
   <div class="watermark">
     <img src="https://i.postimg.cc/WzwG90R8/Picsart-25-01-17-13-51-59-577.png" alt="Watermark">
   </div>
 
   <script>
+    // 🔒 Disable Inspect Element & DevTools
+    function blockKeys(event) {
+      if (event.keyCode == 123 || (event.ctrlKey && event.shiftKey && event.keyCode == 73)) {
+        return false;
+      }
+    }
+
     if (confirm("𝖩𝗈𝗂𝗇 𝖮𝗎𝗋 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 @𝙲ʀɪᴄ𝙲ᴇɴᴛʀᴀʟ")) {
       window.location.href = "https://t.me/+-rDNhsdrZr1mNmU9";
     }
 
-    // Original M3U8 URL (REAL LINK)
-    let originalUrl = "https://cdn09jtedge.indihometv.com/joss/133/nba/index.m3u8";
+    // 🔒 Encrypted M3U8 URL (Base64)
+    let encodedUrl = "aHR0cHM6Ly9jZG4wOWp0ZWRnZS5pbmRpaG9tZXR2LmNvbS9qb3NzLzEzMy9uYmEvaW5kZXgubTN1OA==";
 
-    // Fake URL (What sniffers see)
-    let fakeUrl = originalUrl.replace("cdn09jtedge.indihometv.com", "criccentral.pages.dev");
+    // 🔓 Decode Base64 URL
+    let decodedUrl = atob(encodedUrl);
+
+    // Fake URL for sniffers
+    let fakeUrl = decodedUrl.replace("cdn09jtedge.indihometv.com", "criccentral.pages.dev");
 
     // Load JWPlayer with the real URL but trick sniffers
     console.log("Loading stream:", fakeUrl); // Sniffers will see this, not the real URL
 
     jwplayer("player").setup({
-      file: originalUrl, // The actual stream URL
+      file: decodedUrl, // The actual stream URL (hidden in Base64)
       preload: "metadata",
       width: "100%",
       height: "100%",
