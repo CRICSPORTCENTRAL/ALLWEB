@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝙲ʀɪᴄ 𝙲ᴇɴᴛʀᴀʟ</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    #player {
+      position: absolute;
+      width: 100% !important;
+      height: 100% !important;
+    }
+    .watermark {
+      position: absolute;
+      top: 7px;
+      left: 10px;
+      z-index: 10;
+    }
+    .watermark img {
+      width: 110px;
+      opacity: 0.8;
+    }
+  </style>
+  <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
+</head>
+<body>
+  <div id="player"></div>
+  <div class="watermark">
+    <img src="https://i.postimg.cc/WzwG90R8/Picsart-25-01-17-13-51-59-577.png" alt="Watermark">
+  </div>
+
+  <script>
+    if (confirm("𝖩𝗈𝗂𝗇 𝖮𝗎𝗋 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 @𝙲ʀɪᴄ𝙲ᴇɴᴛʀᴀʟ")) {
+      window.location.href = "https://t.me/+-rDNhsdrZr1mNmU9";
+    }
+
+    // Original M3U8 URL (REAL LINK)
+    let originalUrl = "https://cdn09jtedge.indihometv.com/joss/133/nba/index.m3u8";
+
+    // Fake URL (What sniffers see)
+    let fakeUrl = originalUrl.replace("cdn09jtedge.indihometv.com", "criccentral.pages.dev");
+
+    // Load JWPlayer with the real URL but trick sniffers
+    console.log("Loading stream:", fakeUrl); // Sniffers will see this, not the real URL
+
+    jwplayer("player").setup({
+      file: originalUrl, // The actual stream URL
+      preload: "metadata",
+      width: "100%",
+      height: "100%",
+    });
+  </script>
+</body>
+</html>
