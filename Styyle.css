@@ -1,0 +1,61 @@
+/* Netflix Style JW Player UI */
+
+/* Remove default background */
+.jwplayer {
+    background-color: black !important;
+}
+
+/* Control bar styling */
+.jw-controlbar {
+    background: rgba(0, 0, 0, 0.8) !important;
+    border-top: 2px solid red;
+    padding: 8px;
+}
+
+/* Play button */
+.jw-display-icon-container {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.jw-display-icon-container .jw-icon {
+    color: white !important;
+    font-size: 28px !important;
+}
+
+/* Progress bar */
+.jw-progress {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.jw-slider-container {
+    height: 5px !important;
+}
+
+/* Buffering color */
+.jw-buffer {
+    background: rgba(255, 0, 0, 0.7) !important;
+}
+
+/* Volume control */
+.jw-slider-volume {
+    background: rgba(255, 0, 0, 0.7) !important;
+}
+
+/* Time display */
+.jw-text-duration,
+.jw-text-alt {
+    color: white !important;
+    font-size: 14px !important;
+}
+
+/* Fullscreen button */
+.jw-button-container .jw-icon-fullscreen {
+    color: white !important;
+}
+
+/* Hover effects */
+.jw-icon:hover {
+    filter: brightness(1.5);
+}
