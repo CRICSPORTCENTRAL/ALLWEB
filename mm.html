@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLS Video Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .player-container {
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            background: #000;
+            border-radius: 8px;
+        }
+        .quality-selector {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #555;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .error-message {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="player-container">
+        <video id="videoPlayer" autoplay muted controls></video>
+        <select id="qualitySelector" class="quality-selector" style="display: none;"></select>
+        <p id="errorMessage" class="error-message">Error: Unable to play this stream!</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0"></script>
+    <script>
+        const video = document.getElementById("videoPlayer");
+        const qualitySelector = document.getElementById("qualitySelector");
+        const errorMessage = document.getElementById("errorMessage");
+        const urlParams = new URLSearchParams(window.location.search);
+        const streamUrl = urlParams.get("stream");
+
+        if (streamUrl) {
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(streamUrl);
+                hls.attachMedia(video);
+
+                hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                    qualitySelector.style.display = "inline-block";
+                    qualitySelector.innerHTML = `<option value="-1">Auto</option>`;
+
+                    hls.levels.forEach((level, index) => {
+                        const option = document.createElement("option");
+                        option.value = index;
+                        option.text = level.height ? `${level.height}p` : `Level ${index + 1}`;
+                        qualitySelector.appendChild(option);
+                    });
+
+                    qualitySelector.addEventListener("change", (event) => {
+                        hls.currentLevel = parseInt(event.target.value, 10);
+                    });
+                });
+
+                hls.on(Hls.Events.ERROR, (_, data) => {
+                    if (data.fatal) errorMessage.style.display = "block";
+                });
+
+            } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+                video.src = streamUrl;
+                video.addEventListener("error", () => {
+                    errorMessage.style.display = "block";
+                });
+            } else {
+                errorMessage.textContent = "Error: HLS is not supported in this browser.";
+                errorMessage.style.display = "block";
+            }
+        } else {
+            errorMessage.textContent = "Error: No stream URL provided!";
+            errorMessage.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
